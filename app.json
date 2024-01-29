@@ -1,0 +1,135 @@
+{
+  "expo": {
+    "name": "Noosk Inc",
+    "slug": "noosk",
+    "version": "6.1.1",
+    "description": "Welcome to Noosk — Your Hub for Shared Wisdom!\n\nNoosk is a unique social network designed to elevate global intellect through the exchange of knowledge, skills, and crafts. Share your knowledge and skills and contribute to a more informed world.\n\n- Share Content\n\nFrom tech insights to artisanal crafts, share what you know and inspire others to do the same.\n\n- Interact & Engage\n\nReact to content from other users, ask questions, and request help to broaden your understanding of complex subjects.\n\n- Collect Rewards\n\nThe more you share and help others, the more other users appreciate your content, the higher your status on the platform.\n\nWhy Choose Noosk?\n\n- Diverse Range of Topics\n\n- Thoughtful Discussions\n\n- User-Generated Knowledge-Based Content\n\n- Expert Opinions\n\n- Gamified Experience",
+    "keywords": [
+      "knowledge",
+      "knowledge sharing",
+      "socialmedia",
+      "growth",
+      "spread talent",
+      "expertise",
+      "skill excange",
+      "community",
+      "personal growth",
+      "intellectual exchange",
+      "Q&A",
+      "Skill Mastery",
+      "educational networking",
+      "user-generated content"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/noosk_app_icon.png",
+    "scheme": "noosk",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash_screen/noosk.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#171C24"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Noosk to access your pictures and videos so you can share them with the community"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Noosk to access your camera to take pictures and videos to let you share them with the community"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "@react-native-google-signin/google-signin"
+      ],
+      [
+        "expo-apple-authentication"
+      ],
+      "expo-router"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+       "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      },
+      "associatedDomains": ["applinks:noosk.co"],
+      "supportsTablet": true,
+      "bundleIdentifier": "com.robya91.noosk",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "usesAppleSignIn": true,
+       "buildNumber": "23"
+    },
+    "android": {
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "noosk.co"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.robya91.noosk",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "versionCode": 23
+    },
+    "web": {
+      "favicon": "./assets/noosk_app_icon.png",
+      "output": "static",
+      "bundler": "metro"
+    },
+    "notification": {
+  "icon": "./assets/noosk_app_icon.png"
+},
+    "extra": {
+      "eas": {
+        "projectId": "***********************"
+      },
+      "firebase": {
+        "common": {
+          "apiKey": "*****************************",
+          "authDomain": "*****************************",
+          "projectId": "noosk-app",
+          "storageBucket": "noosk-app.appspot.com",
+          "messagingSenderId": "*****************************",
+          "databaseURL": "*****************************"
+        },
+        "android": {
+          "appId": "1*****************************"
+        },
+        "ios": {
+          "appId": "*****************************"
+        }
+      }
+    },
+    "owner": "noosk"
+  }
+}
